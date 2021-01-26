@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портфолио</title>
+    <link rel="stylesheet" href="../css/modern-normalize.min.css">
+    <link rel="stylesheet" href="../css/portfolio.min.css">
+</head>
+
+<body>
+    <!-- Верхняя линия-->
+    <header class="page-header--unlimited">
+        <nav class="container header">
+            <a href="../index.html">
+                <p class="logo"><span class="logo__text">Web</span>Studio</p>
+            </a>
+            <button type="button" class="menu-button" aria-expanded="false" aria-controls="menu-container" data-menu-button>
+                <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+                    <use class="icon-close" href="../images/sprite.svg#close"></use>
+                    <use class="icon-menu" href="../images/sprite.svg#menu"></use>
+                </svg>
+            </button>
+    
+            <div class="menu-container" id="menu-container" data-menu>
+                <ul class="site-nav">
+                    <li class="site-nav__item">
+                        <a href="../index.html" class="site-nav__link">Студия</a>
+                    </li>
+                    <li class="site-nav__item">
+                        <a href="./portfolio/portfolio.html" class="site-nav__link selected-page">Портфолио</a>
+                    </li>
+                    <li class="site-nav__item">
+                        <a href="#address" class="site-nav__link">Контакты</a>
+                    </li>
+                </ul>
+                <ul class="contact-nav">
+                    <li class="contact-nav__item"><a href="mailto:info@devstudio.com" class="contact-nav__link">
+                            <svg class="contact-nav__icon" width="16" height="12">
+                                <use href="../images/sprite.svg#envelope"></use>
+                            </svg>
+                            <span>info@devstudio.com</span></a></li>
+                    <li class="contact-nav__item"><a href="tel:+380961111111" class="contact-nav__link">
+                            <svg class="contact-nav__icon" width="10" height="16">
+                                <use href="../images/sprite.svg#smartphone"></use>
+                            </svg>
+                            <span>+38 096 111 11 11</span></a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+<!-- Наполнение страницы-->
+    <main>
+        <h1 class="visually-hidden">Портфолио</h1>
+        <section class="container filters">
+        <ul class="filter-list">
+        <li class="filter-list__item">
+            <button type="button" class="filter-list__button">
+                Все</button></li>
+        <li class="filter-list__item">
+            <button type="button" class="filter-list__button">
+                Веб-сайты</button></li>
+        <li class="filter-list__item">
+            <button type="button" class="filter-list__button">
+                Приложения</button></li>
+        <li class="filter-list__item">
+            <button type="button" class="filter-list__button">
+                Дизайн</button></li>
+        <li class="filter-list__item">
+            <button type="button" class="filter-list__button">
+                Маркетинг</button></li>
+        </ul>
+      </section>
+      <h2 class="visually-hidden">Проекты</h2>
+        <section class="container projects">
+            <ul class="project-list">
+        <li class="project-list__item">
+            <a href="" class="project-list__link">
+                <div class="project-list__overlay">
+                    <img src="../images/portfolio/project1@1x.jpg" alt="Сайт технокряк"
+                    srcset="../images/portfolio/project1@2x.jpg 2x" />
+                    <p class="project-list__thumb-text">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>                    
+                    </div>
+                    <div class="project-list__info">
+                        <h3 class="project-list__name">Технокряк</h3>
+                        <p class="project-list__description">Веб-сайт</p>
+                    </div>
+            </a>
+        </li>
+        <li class="project-list__item">
+            <a href="" class="project-list__link">
+                <div class="project-list__overlay">
+                <img src="../images/portfolio/project2@1x.jpg" alt="Дизайн постера баскетбольной команды"
+                    srcset="../images/portfolio/project2@2x.jpg 2x" />
+                <p class="project-list__thumb-text">Все друзья хотят меня женить, потому что люди не выносят, когда кому-нибудь хорошо.</p>
+                </div>
+                    <div class="project-list__info">
+                    <h3 class="project-list__name">Постер New Orlean vs Golden Star</h3>
+                    <p class="project-list__description">Дизайн</p>
+                </div>
+            </a>
+        </li>
+        <li class="project-list__item">
+            <a href="" class="project-list__link">
+                <div class="project-list__overlay">
+                <img src="../images/portfolio/project3@1x.jpg" alt="Приложение для ресторана"
+                    srcset="../images/portfolio/project3@2x.jpg 2x" />
+                <p class="project-list__thumb-text">Если вам говорят, что вы многогранная личность — не обольщайтесь. Может быть, имеется в виду, что вы гад, сволочь и
+                паразит одновременно.</p>
+                </div>
+                    <div class="project-list__info">
+                    <h3 class="project-list__name">Ресторан Seafood</h3>
+                    <p class="project-list__description">Приложение</p>
+                </div>
+            </a>
+        </li>
+        <li class="project-list__item">
+            <a href="" class="project-list__link">
+                <div class="project-list__overlay">
+                <img src="../images/portfolio/project4@1x.jpg" alt="Маркетинг проекта Prime"
+                    srcset="../images/portfolio/project4@2x.jpg 2x" />
+                <p class="project-list__thumb-text">Алкоголь в малых дозах безвреден в любом количестве.</p>
+                </div>
+                <div class="project-list__info">
+                    <h3 class="project-list__name">Проект Prime</h3>
+                    <p class="project-list__description">Маркетинг</p>
+                </div>
+            </a>
+        </li>
+        <li class="project-list__item">
+            <a href="" class="project-list__link">
+                <div class="project-list__overlay">
+                <img src="../images/portfolio/project5@1x.jpg" alt="Приложение для проекта Boxes"
+                    srcset="../images/portfolio/project5@2x.jpg 2x" />
+                <p class="project-list__thumb-text">Выключили электричество, и в городе воцарилась полная тишина.
+                Оказывается, звуки исходят не от людей.
+                Они уже давно-давно молчат.</p>
+                </div>
+                <div class="project-list__info">
+                    <h3 class="project-list__name">Проект Boxes</h3>
+                    <p class="project-list__description">Приложение</p>
+                </div>
+            </a>
+        </li>
+        <li class="project-list__item">
+            <a href="" class="project-list__link">
+                <div class="project-list__overlay">
+                <img src="../images/portfolio/project6@1x.jpg" alt="Веб-сайт" srcset="../images/portfolio/project6@2x.jpg 2x" />
+                <p class="project-list__thumb-text">А юмор — это жизнь. Это состояние. Это не шутки. Это искры в глазах. Это влюбленность в собеседника и готовность
+                рассмеяться до слез.</p>
+                </div>
+                <div class="project-list__info">
+                    <h3 class="project-list__name">Inspiration has no Borders</h3>
+                    <p class="project-list__description">Веб-сайт</p>
+                </div>
+            </a>
+        </li>
+        <li class="project-list__item">
+            <a href="" class="project-list__link">
+                <div class="project-list__overlay">
+                <img src="../images/portfolio/project7@1x.jpg" alt="Дизайн издания Limited Edition"
+                    srcset="../images/portfolio/project7@2x.jpg 2x" />
+                <p class="project-list__thumb-text">Никогда не женись на женщине, с которой можно жить. Женись на той, без которой жить нельзя.</p>
+                </div>
+                <div class="project-list__info">
+                    <h3 class="project-list__name">Издание Limited Edition</h3>
+                    <p class="project-list__description">Дизайн</p>
+                </div>
+            </a>
+        </li>
+        <li class="project-list__item">
+            <a href="" class="project-list__link"> 
+                <div class="project-list__overlay">
+                <img src="../images/portfolio/project8@1x.jpg" alt="Маркетинг проекта LAB"
+                    srcset="../images/portfolio/project8@2x.jpg 2x" />
+                <p class="project-list__thumb-text">Алкоголь в малых дозах безвреден в любом количестве.</p>
+                </div>
+                <div class="project-list__info">
+                    <h3 class="project-list__name">Проект LAB</h3>
+                    <p class="project-list__description">Маркетинг</p>
+                </div>
+            </a>
+        </li>
+        <li class="project-list__item">
+            <a href="" class="project-list__link">
+                <div class="project-list__overlay">
+                <img src="../images/portfolio/project9@1x.jpg" alt="Приложение Growing Business"
+                    srcset="../images/portfolio/project9@2x.jpg 2x" />
+                <p class="project-list__thumb-text">Ученые Гарвардского университета установили, что белые мыши размножаются намного лучше, если им не мешают ученые
+                Гарвардского университета.</p>
+                </div>
+                <div class="project-list__info">
+                    <h3 class="project-list__name">Growing Business</h3>
+                    <p class="project-list__description">Приложение</p>
+                </div>
+            </a>
+        </li>      
+            </ul>
+        </section>
+    </main>
+
+    <!-- footer-->
+<footer class="footer--unlimited">
+    <div class="container footer">
+        <ul class="footer-list">
+            <li class="footer-list__item">
+                <a href="../index.html">
+                    <p class="logo logo--bottom">
+                        <span class="logo__text">Web</span>Studio
+                    </p>
+                </a>
+                <address  id="address" class="footer-contacts">
+                    <ul class="footer-contacts__list">
+                        <li class="footer-contacts__item">
+                            <a class="address__link" target="_blank" href="https://goo.gl/maps/JPTJLpiqcLhhmCbZ7">
+                                г. Киев, пр-т Леси Украинки, 26
+                            </a>
+                        </li>
+                        <li class="footer-contacts__item">
+                            <a class="footer-contacts__link" href="mailto:info@example.com">info@example.com</a>
+                        </li>
+                        <li class="footer-contacts__item">
+                            <a class="footer-contacts__link" href="tel:+380991111111">+38 099 111 11 11</a>
+                        </li>
+                    </ul>
+                </address>
+            </li>
+
+            <li class="footer-list__item">
+                <h3 class="footer__invitation">Присоединяйтесь</h3>
+                <ul class="social-links social-links--footerish">
+                    <li class="social-links-item"><a href="" class="social-links__link">
+                            <svg width="20" height="20">
+                                <use href="../images/sprite.svg#instagram"></use>
+                            </svg>
+                        </a></li>
+                    <li class="social-links-item"><a href="" class="social-links__link">
+                            <svg width="20" height="20">
+                                <use href="../images/sprite.svg#twitter"></use>
+                            </svg>
+                        </a></li>
+                    <li class="social-links-item"><a href="" class="social-links__link">
+                            <svg width="20" height="20">
+                                <use href="../images/sprite.svg#facebook"></use>
+                            </svg>
+                        </a></li>
+                    <li class="social-links-item"><a href="" class="social-links__link">
+                            <svg width="20" height="20">
+                                <use href="../images/sprite.svg#linkedin"></use>
+                            </svg>
+                        </a></li>
+                </ul>
+            </li>
+
+            <li class="footer-list__item">
+                <h3 class="footer__invitation">Подпишитесь на рассылку</h3>
+                <form class="form-submit">
+                    <label>
+                        <input type="email" class="form-submit__input" name="mail" placeholder="E-mail"
+                            autocomplete="off" />
+                    </label>
+                    <button type="submit" class="button-submit">
+                        <span>Подписаться</span>
+                        <svg class="button-submit__icon" width="24" height="24">
+                            <use href="../images/sprite.svg#send"></use>
+                        </svg>
+                    </button>
+                </form>
+            </li>
+        </ul>
+    </div>
+</footer>
+<script src="../js/menu-button.js"></script>
+<script src="../js/menu-modal.js"></script>
+</body>
+
+</html>

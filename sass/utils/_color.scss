@@ -1,0 +1,35 @@
+/* цвет основного текста #757575 */
+/* вторичный цвет #212121 */
+/* первичный цвет фона #FFFFFF */
+/* вторичный цвет фона #F5F4FA */
+/* акцент #2196F3 */
+/* цвет иконок серый #AFB1B8 */
+
+// :root {
+//   $primary-text-color: #757575;
+//   $secondary-text-color: #212121;
+//   $primary-background-color: #ffffff;
+//   $secondary-background-color: #f5f4fa;
+//   $akcent-color: #2196f3;
+//   $logo-color: #000000;
+//   $border-color: #ececec;
+//   $footer-color: #2f303a;
+//   $icon-gray-color: #afb1b8;
+// }
+$colors: (
+  'auxiliary-text-color': #757575,
+  'main-text-color': #212121,
+  'additional-color': #ffffff,
+  'section-bg-color': #f5f4fa,
+  'accent-color': #2196f3,
+  'logo-color': #000000,
+  'border-color': #ececec,
+  'border-portfolio-color': #eeeeee,
+  'footer-color': #2f303a,
+  'icon-gray-color': #afb1b8,
+  'second-additional-color': rgba(255, 255, 255, 0.6),
+  'third-additional-color': rgba(47, 48, 58, 0.8),
+);
+@function getColor($key) {
+  @return map-get($colors, $key);
+}
